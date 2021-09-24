@@ -1,0 +1,73 @@
+body {
+	background-color: rgb(252, 252, 207);
+	text-align: center;
+	color: rgb(241, 135, 14);
+	font-family: 'Patrick Hand', Arial, Sans-serif, 'Times New Roman';
+    transition: 0.3s;
+    margin: 5%;
+}
+
+h1 {
+    margin: 5%;
+    font-size: 4em;
+}
+
+#time {
+    font-size: 5em;
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(7, 54, 7);
+    background-color: rgb(13, 238, 107);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    box-shadow: 
+        inset 4px 4px 4px white,
+        inset -4px -4px 4px black;
+    transition: 0.3s;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 white;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+.sun {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 0 0 white;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.dark {
+    background-color: rgb(6, 6, 112);
+    transition: 0.3s;
+    color: lightblue;
+}
+
